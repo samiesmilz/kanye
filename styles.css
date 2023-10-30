@@ -30,12 +30,13 @@ body {
 }
 
 #container {
-  height: 100vh;
+  height: 95vh;
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 #title {
   margin-top: 0;
   font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
