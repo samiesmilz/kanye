@@ -22,5 +22,6 @@ async function autoQuotes() {
 }
 
 $(document).ready(function () {
+  nextQuest();
   autoQuotes();
 });

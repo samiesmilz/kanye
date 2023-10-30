@@ -13,77 +13,111 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "antonioregular";
+  src: url("webfont/antonio-variablefont_wght-webfont.woff2") format("woff2"),
+    url("webfont/antonio-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   display: grid;
   color: white;
   font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
   justify-content: center;
+  background-color: black;
 }
 
 #container {
+  height: 100vh;
   display: grid;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #title {
-  font-size: 90px;
+  margin-top: 0;
+  font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   text-align: center;
-  color: #333333;
-  text-shadow: 1px 1px 2px #da6d6d;
-
-  /* text-shadow: 0 0 50px #6ae75c80; */
-
-  /* Example 3: Multiple shadows */
-  /* text-shadow: 2px 2px 5px #333333, 0px 0px 0px rgb(245, 198, 198); */
+  color: #ffffffd2;
+  font-stretch: extra-expanded;
+  width: 100vw;
+  background-color: #0d0d0d;
+  padding: 5px;
   margin-bottom: 15px;
+  align-self: self-start;
 }
 
 #quote-div {
-  display: grid;
-  border-radius: 25px;
-  border: 5px solid #4f3f3f;
-  padding: 25px;
-  max-width: 1000px;
-  min-height: 450px;
-  min-width: 400px;
-  background-color: #f5eeee;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 5px #090909;
-  margin: 10px 0px;
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  margin: 50px;
 }
 
 #qoute {
-  font-size: 45px;
-  padding-left: 35px;
+  font-size: 2.5rem;
+  padding: 5px 35px;
   font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
   font-weight: 200px;
   margin-bottom: 0px;
-  color: #333333;
+  color: white;
 }
 
 #qoute-by {
   text-align: center;
   font-size: xx-large;
   padding-right: 10px;
-  margin-right: 10px;
   color: #b31b1b;
 }
 
 #quest-btn {
   margin-top: 35px;
-  font-size: 35px;
+  font-size: 1.7rem;
   justify-self: center;
   border-radius: 15px;
-  min-width: 425px;
+  min-width: 400px;
   font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
-  background-color: #333333;
-  color: white;
+  background-color: #05050592;
+  color: #ffffffd2;
   padding-bottom: 5px;
+  border: 1.5px dotted #ffffff7d;
 }
 
 #quest-btn:hover {
   background-color: #b31b1b;
   text-shadow: 2px 2px 5px #333333, 2px 2px 1px black;
+}
+
+@media screen and (max-width: 510px) {
+  #title {
+    padding: 10px;
+  }
+  #qoute {
+    font-size: 2rem;
+    padding: 35px;
+    font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  #qoute-by {
+    text-align: center;
+    font-size: x-large;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #b31b1b;
+  }
+  #quest-btn {
+    margin-top: 35px;
+    font-size: 1.5rem;
+    justify-self: center;
+    border-radius: 15px;
+    min-width: 300px;
+    font-family: "fjalla_oneregular", Arial, Helvetica, sans-serif;
+    background-color: #05050592;
+    color: #ffffffd2;
+    padding-bottom: 5px;
+    border: 1.5px dotted #ffffffb4;
+  }
 }
